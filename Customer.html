@@ -1,0 +1,138 @@
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../static/js/scripts.js"></script>
+        <script src="../static/js/pagination.min.js" type="text/javascript"></script>
+        <link href="../static/css/style.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+                                    <h3  style="text-align: center;">
+                                        Enter Customer details
+                                    </h3>
+                                
+                                </div>
+                                <div class="modal-body" style="background-color: #D3D3D3;">
+                                    <form action="/" class="form-style" id="newuser" method="POST">
+                                        <label for="newUsername">
+                                            ID
+                                        </label>
+                                        <input autofocus="" class="form-control" id="Userid" name="Userid" placeholder="User Id" required="" type="userid"/>
+                                        <br/>
+                                        <label for="newUsername">
+                                            Name
+                                        </label>
+                                        <input autofocus="" class="form-control" id="newUsername" name="newUsername" placeholder="Username" required="" type="username"/>
+                                        <br/>
+                                        <label for="newMobile">
+                                            Phone No
+                                        </label>
+                                        <input class="form-control" id="newMobile" name="newMobile" pattern="[0-9]{10}" placeholder="Phone No" required="" type="tel"/>
+                                        <br/>
+                                        <div class="col-6">
+                                            <label for="address">
+                                                Relation
+                                            </label>
+                                            <input autofocus="" class="form-control" id="relation1" name="relation1" placeholder="Relation" required="" type="text"/>
+                                            <br/>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="newMobile">
+                                                Phone No
+                                            </label>
+                                            <input class="form-control" id="newMobile1" name="newMobile1" pattern="[0-9]{10}" placeholder="Phone No" required="" type="tel"/>
+                                            <br/>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="address">
+                                                Relation
+                                            </label>
+                                            <input autofocus="" class="form-control" id="relation2" name="relation2" placeholder="Relation" required="" type="text"/>
+                                            <br/>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="newMobile">
+                                                Phone No
+                                            </label>
+                                            <input class="form-control" id="newMobile2" name="newMobile2" pattern="[0-9]{10}" placeholder="Phone No" required="" type="tel"/>
+                                            <br/>
+                                        </div>
+                                        <label for="address">
+                                            Address
+                                        </label>
+                                        <input class="form-control" id="address" name="address" placeholder="Address" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            AadharNo
+                                        </label>
+                                        <input class="form-control" id="aadharno" name="aadharno" placeholder="Aadhar No" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            Pan No
+                                        </label>
+                                        <input class="form-control" id="panno" name="panno" placeholder="Pan No" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            Work Addr
+                                        </label>
+                                        <input class="form-control" id="workaddress" name="workaddress" placeholder="Work Address" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            GrossPay
+                                        </label>
+                                        <input class="form-control" id="grosspay" name="grosspay" placeholder="Gross Pay" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            NetPay
+                                        </label>
+                                        <input class="form-control" id="netpay" name="netpay" placeholder="Net Pay" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            Monthly Income
+                                        </label>
+                                        <input class="form-control" id="moninc" name="moninc" placeholder="Monthly Income" required="" type="number"/>
+                                        <br/>
+                                        <label for="address">
+                                            Other Income
+                                        </label>
+                                        <input class="form-control" id="otherinc" name="otherinc" placeholder="Other Income" required="" type="number"/>
+                                        <br/>
+                                        <label for="address">
+                                            History
+                                        </label>
+                                        <input class="form-control" id="history" name="history" placeholder="History" required="" type="text"/>
+                                        <br/>
+                                        <label for="address">
+                                            Loan Amount
+                                        </label>
+                                        <input class="form-control" id="loanamt" name="loanamt" placeholder="Loan Amount" required="" type="number"/>
+                                        <br/>
+                                        <label for="address">
+                                            Rate Of Interest
+                                        </label>
+                                        <input class="form-control" id="rateofint" name="rateofint" placeholder="Rate of Interest" required="" type="number"/>
+                                        <br/>
+                                        <label for="newType">
+                                            Mode of Payment
+                                        </label>
+                                        <select class="form-control" id="newType" required="">
+                                            <option value="emi">
+                                                EMI
+                                            </option>
+                                            <option value="monthly">
+                                                Monthly
+                                            </option>
+                                        </select>
+                                        <br/>
+                                        <label for="address">
+                                            Property
+                                        </label>
+                                        <input class="form-control" id="property" name="property" placeholder="Property" required="" type="text"/>
+                                        <br/>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary test_btn" id="create" name="submit" type="submit">
+                                                Add Customer
+                                            </button>
+                                        </div>
+                                    </form>
